@@ -13,7 +13,12 @@ export type AuthStackParamList = {
 
 export type HomeStackParamList = {
   HomeScreen: undefined;
+  UploadStackNav: undefined;
   UploadScreen: undefined;
+  ItemDetails: undefined;
+  AddItem: undefined;
+
+  //delete
   WithdrawMoney: undefined;
   EnterAmount: undefined;
   EnterPin: undefined;

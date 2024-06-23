@@ -17,10 +17,8 @@ export const CustomSelectDropDown = (props:any) => {
         onPress={onPress}
       >
         <View>
-          <Text className="font-[400] text-xs  font-[Inter]">
-            {value}
-          </Text>
-          <Text className="font-[400] text-xs  font-[Inter]">
+          <Text className="font-normal text-xs  font-[Inter]">{value}</Text>
+          <Text className="font-normal text-xs  font-[Inter]">
             {price && `N${price}`}
           </Text>
         </View>

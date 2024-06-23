@@ -9,7 +9,7 @@ import useAuthStore from "../stores/authStore";
 
 // Import AsyncStorage from react-native-async-storage
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import MainNavigation from "./MainNavigations";
+import TabNavigation from "./TabNavigations";
 
 // Create an alias for the auth store state and actions
 const useAuth = useAuthStore;
@@ -51,7 +51,7 @@ const AppNavigation = () => {
   // Return the NavigationContainer component with the appropriate navigation based on the isLoggedIn value
   return (
     <NavigationContainer>
-      {isLoggedIn ? <MainNavigation /> : <AuthNavigation />}
+      {isLoggedIn ? <TabNavigation /> : <AuthNavigation />}
     </NavigationContainer>
   );
 };

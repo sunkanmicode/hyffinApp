@@ -1,6 +1,9 @@
 
 import HomeScreen from "../screens/mainScreens/HomeScreen";
 import UploadScreen from "../screens/mainScreens/UploadScreen";
+import AddItem from "../screens/mainScreens/UploadScreen/AddItem";
+import ItemList from "../screens/mainScreens/UploadScreen/ItemDetails";
+import UploadStackNav from "./UploadStackNav";
 import { HomeStackParamList } from "./navigationTypes";
 // import {
 //   createNativeStackNavigator,
@@ -13,7 +16,7 @@ const HomeStack = () => {};
 const Tab = createBottomTabNavigator<HomeStackParamList>();
 
 
-const MainNavigation = () => {
+const TabNavigation = () => {
   return (
     <>
       <Tab.Navigator
@@ -21,10 +24,12 @@ const MainNavigation = () => {
         screenOptions={{ header: () => null }}
       >
         <Tab.Screen name="HomeScreen" component={HomeScreen} />
-        <Tab.Screen name="UploadScreen" component={UploadScreen} />
+        {/* <Tab.Screen name="UploadScreen" component={UploadScreen} />
+        <Tab.Screen name="AddItem" component={AddItem} /> */}
+        <Tab.Screen name="UploadStackNav" component={UploadStackNav} />
       </Tab.Navigator>
     </>
   );
 };
 
-export default MainNavigation;
+export default TabNavigation;

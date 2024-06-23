@@ -11,7 +11,7 @@ import {
 } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
 // import * as ImagePicker from "expo-image-picker";
-import { truncate } from "../../utilis/truncate";
+// import { truncate } from "../../utilis/truncate";
 
 type Prop = {
   imageName?: string | null;
@@ -119,7 +119,8 @@ const CustomImagePicker = ({
             {itemUriName ? (
               <View className=" flex-row items-center">
                 <Text className="font-normal text-[10px] font-[Inter]  text-center mx-8">
-                  {truncate(itemUriName, 40)}
+                  {/* {truncate(itemUriName, 40)} */}
+                  {itemUriName}
                 </Text>
                 <TouchableOpacity
                   onPress={handleRemoveImage}
